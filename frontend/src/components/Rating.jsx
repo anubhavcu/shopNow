@@ -85,11 +85,11 @@ Rating.defaultProps = {
 };
 
 // just for type checking (completely optional) - if number is passed as text prop from Product it will show an error in console.
-Rating.propTypes = {
-  value: PropTypes.number.isRequired,
-  text: PropTypes.string.isRequired,
-  color: PropTypes.string,
-};
+// Rating.propTypes = {
+//   value: PropTypes.number.isRequired,
+//   text: PropTypes.string.isRequired,
+//   color: PropTypes.string,
+// };
 
 export default Rating;
 

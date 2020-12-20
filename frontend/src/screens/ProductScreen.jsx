@@ -13,7 +13,7 @@ const ProductScreen = ({ match }) => {
       setProduct(data);
     };
     fetchProduct();
-  }, []);
+  }, [match]);
   return (
     <div>
       <Link className="btn btn-dark my-3 customHover" to="/">
@@ -77,3 +77,5 @@ const ProductScreen = ({ match }) => {
 export default ProductScreen;
 
 // flush variant to remove outer borders and rounded corners to render list group items edge-to-edge in a parent container
+
+// **  react hook useEffect also takes another parameter as an array for dependencies , so to remove warning we have passed match in as a dependency --  check later
