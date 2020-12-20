@@ -9,3 +9,10 @@ h3 {
 .rating span {
   margin: 0.1rem;
 }
+
+.customHover {
+  transition: transform 0.2s;
+}
+.customHover:hover {
+  transform: scale(1.07);
+}

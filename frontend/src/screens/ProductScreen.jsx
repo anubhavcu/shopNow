@@ -8,7 +8,7 @@ const ProductScreen = ({ match }) => {
   const product = products.find((p) => p._id === match.params.id);
   return (
     <div>
-      <Link className="btn btn-dark my-3" to="/">
+      <Link className="btn btn-dark my-3 customHover" to="/">
         Go Back
       </Link>
       <Row>
@@ -51,7 +51,7 @@ const ProductScreen = ({ match }) => {
               </ListGroup.Item>
               <ListGroup.Item>
                 <Button
-                  className="btn-block"
+                  className="btn-block customHover"
                   type="button"
                   disabled={product.countInStock === 0}
                 >
